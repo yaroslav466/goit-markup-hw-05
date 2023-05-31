@@ -135,12 +135,12 @@ body{
     display: flex;
     gap: 40px;
     align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-contacts-link:hover,
 .menu-contacts-link:focus {
     color: #404bbf;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-item{
@@ -573,12 +573,11 @@ body{
 .portfolio-link{
     display: block;
     position: relative;
-    box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-link:hover,
-.portfolio-link:focus{
+.portfolio-link:hover .portfolio-prg,
+.portfolio-link:focus .portfolio-prg{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     transform: translateY(0%);
 }
@@ -586,6 +585,7 @@ body{
 .portfolio-image{
     position: relative;
     overflow: hidden;
+
 }
 
 
